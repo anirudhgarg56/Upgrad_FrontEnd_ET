@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Covid Cases</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            background-image: url('./Covid-2.jpg');
+            background-size: cover;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+        #input{
+            padding-top: 15px;
+            margin: auto;
+            align-content: center;
+            width: 50%;
+            text-align: center;
+        }
+        #result{
+            margin-bottom: 10px;
+            background-color: rgb(250, 213, 143);
+            text-align: center;
+            color: black;
+        }
+        #output{
+            padding-top: 15px;
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="input">
+        <input type="text" id="country">
+        <input type="date" id="sdate">
+        <input type="date" id="edate">
+        <button id="submit" class="btn btn-primary btn-sm" onclick="getresult()">Submit</button>
+    </div> 
+    <div id="output">
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
